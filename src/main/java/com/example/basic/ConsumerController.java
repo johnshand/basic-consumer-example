@@ -3,9 +3,6 @@ package com.example.basic;
 import org.springframework.web.bind.annotation.*;
 import org.springframework.web.client.RestTemplate;
 
-import java.util.Arrays;
-
-
 @RestController
 public class ConsumerController {
 

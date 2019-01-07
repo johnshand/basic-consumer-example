@@ -1,7 +1,6 @@
 package com.example.basic;
 
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
-
 import java.util.List;
 
 @JsonIgnoreProperties(ignoreUnknown = true)
@@ -46,6 +45,4 @@ public class ConsumerOfProvider {
                 ", array=" + array +
                 '}';
     }
-
-
 }
