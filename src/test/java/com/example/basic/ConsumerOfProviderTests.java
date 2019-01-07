@@ -21,7 +21,7 @@ public class ConsumerOfProviderTests {
         final ConsumerOfProvider values = new ConsumerOfProvider();
 
         //when
-        values.setsomeInt(expectedInt);
+        values.setSomeInt(expectedInt);
 
         //then
         final Field field = values.getClass().getDeclaredField("someInt");

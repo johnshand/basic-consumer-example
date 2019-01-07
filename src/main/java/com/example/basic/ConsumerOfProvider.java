@@ -8,33 +8,33 @@ public class ConsumerOfProvider {
 
     private String someString;
     private int someInt;
-    private List<String> array;
+    private List<String> someArray;
 
     public ConsumerOfProvider() {
     }
 
-    public String getsomeString() {
+    public String getSomeString() {
         return someString;
     }
 
-    public void setsomeString(String someString) {
+    public void setSomeString(String someString) {
         this.someString = someString;
     }
 
-    public int getsomeInt() {
+    public int getSomeInt() {
         return someInt;
     }
 
-    public void setsomeInt(int someInt) {
+    public void setSomeInt(int someInt) {
         this.someInt = someInt;
     }
 
-    public List<String> getarray() {
-        return array;
+    public List<String> getSomeArray() {
+        return someArray;
     }
 
-    public void setarray(List<String> array) {
-        this.array = array;
+    public void setArray(List<String> array) {
+        this.someArray = array;
     }
 
     @Override
@@ -42,7 +42,7 @@ public class ConsumerOfProvider {
         return "ReturnedValues{" +
                 "someString='" + someString + '\'' +
                 ", someInt=" + someInt +
-                ", array=" + array +
+                ", someArray=" + someArray +
                 '}';
     }
 }
