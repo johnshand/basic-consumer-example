@@ -17,7 +17,6 @@ import static org.hamcrest.CoreMatchers.instanceOf;
 import static org.hamcrest.MatcherAssert.assertThat;
 import static io.pactfoundation.consumer.dsl.LambdaDsl.newJsonBody;
 
-
 import java.util.HashMap;
 import java.util.Map;
 
@@ -39,8 +38,7 @@ public class BasicProviderPactTest extends AbstractRestClient {
     public RequestResponsePact consumeGetRequestTest(PactDslWithProvider builder) {
 
         return builder
-                .given("A GET request is sent to the Basic Provider")
-                .uponReceiving("A Response")
+                .uponReceiving("A Response From The Provider")
                 .path(providerPath)
                 .method("GET")
                 .headers(headers)
@@ -48,7 +46,8 @@ public class BasicProviderPactTest extends AbstractRestClient {
                 .status(200)
                 .headers(headers)
                 .body(newJsonBody((b) ->
-                        b.numberType("someInt"))
+                        b.numberType("someInt")
+                )
                 .build())
                 .toPact();
     }
