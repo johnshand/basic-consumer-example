@@ -13,14 +13,6 @@ public class ConsumerOfProvider {
     public ConsumerOfProvider() {
     }
 
-    public String getSomeString() {
-        return someString;
-    }
-
-    public void setSomeString(String someString) {
-        this.someString = someString;
-    }
-
     public int getSomeInt() {
         return someInt;
     }
@@ -29,20 +21,10 @@ public class ConsumerOfProvider {
         this.someInt = someInt;
     }
 
-    public List<String> getSomeArray() {
-        return someArray;
-    }
-
-    public void setArray(List<String> array) {
-        this.someArray = array;
-    }
-
     @Override
     public String toString() {
         return "ReturnedValues{" +
-                "someString='" + someString + '\'' +
                 ", someInt=" + someInt +
-                ", someArray=" + someArray +
                 '}';
     }
 }
